@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, PropTypes } from "react";
 import AddIngredients from "./Main/AddIngredients";
 import StaticNavbar from "./Main/StaticNavbar";
 import DisplayRecipes from "./Main/DisplayRecipes";
 import Login from "./Profile/Login";
-import "./Main/MainPage.css";
-
-
+import "./Main/MainPage.css";  
+import {connect} from 'react-redux';  
+import * as recipeActions from '../actions/recipeActions';
 
 
 
@@ -22,7 +22,7 @@ class MainContainer extends Component {
           <AddIngredients />
         </div>
         <div className="col-lg-6">
-          <DisplayRecipes/>
+          <DisplayRecipes />
           </div>
        
       </div>
@@ -30,4 +30,15 @@ class MainContainer extends Component {
   }
 }
 
-export default MainContainer;
+function mapStateToProps(state, ownProps) {
+
+} 
+
+MainContainer.propTypes = {
+
+  ingredients:PropTypes.array.isRequired,
+  recipes: PropTypes.array.isRequired
+
+};
+
+export default connect(mapStateToProps)(MainContainer);  

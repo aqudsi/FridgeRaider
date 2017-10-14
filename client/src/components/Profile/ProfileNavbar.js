@@ -16,7 +16,7 @@ render(){
     <Navbar.Collapse>
       <Nav pullRight>
        <Nav>
-        <NavDropdown eventKey={3} title="Welcome, Chad" id="basic-nav-dropdown">
+        <NavDropdown eventKey={3} title="Login" id="basic-nav-dropdown">
           <MenuItem href="/" eventKey={3.1}>Home</MenuItem>
           <MenuItem eventKey={3.2}><Login /></MenuItem>
           <MenuItem divider />

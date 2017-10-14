@@ -7,10 +7,10 @@ const LoginInput = React.createClass({
   <Form horizontal>
     <FormGroup controlId="formHorizontalEmail">
       <Col componentClass={ControlLabel} sm={2}>
-        Email
+        Name
       </Col>
       <Col sm={10}>
-        <FormControl type="email" placeholder="Email" />
+        <FormControl type="email" placeholder="Name" />
       </Col>
     </FormGroup>
 
@@ -25,7 +25,7 @@ const LoginInput = React.createClass({
 
     <FormGroup>
       <Col smOffset={2} sm={10}>
-        <Button href="/profile" type="submit">
+        <Button href="/profile" type="button">
           Sign in
         </Button>
       </Col>

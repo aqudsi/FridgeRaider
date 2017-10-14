@@ -34,7 +34,7 @@ export const SignupInput = React.createClass({
 
     <FormGroup>
       <Col smOffset={2} sm={10}>
-        <Button href="/" type="submit">
+        <Button href="/main" type="submit">
           Submit
         </Button>
       </Col>
